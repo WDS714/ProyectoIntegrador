@@ -1,0 +1,139 @@
+/* Paleta */
+:root {
+  --bordo-oscuro: #4A102A;
+  --vino: #85193C;
+  --tomate: #C5172E;
+  --amarillo: #FCF259;
+  --texto-claro: #ffffff;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--bordo-oscuro);
+  color: var(--texto-claro);
+}
+
+header {
+  background-color: var(--vino);
+  text-align: center;
+  padding: 2rem;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  color: var(--amarillo);
+}
+
+.info-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.card {
+  background-color: var(--vino);
+  border-left: 10px solid var(--tomate);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.card h2 {
+  margin-top: 0;
+  color: var(--amarillo);
+}
+
+.graficos {
+  padding: 2rem;
+  background-color: var(--vino);
+  margin-top: 2rem;
+}
+
+.graficos h2 {
+  text-align: center;
+  color: var(--amarillo);
+  margin-bottom: 1rem;
+}
+
+.iframe-container {
+  display: flex;
+  justify-content: center;
+}
+
+iframe {
+  width: 90%;
+  height: 500px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.chat {
+  padding: 2rem;
+  background-color: var(--vino);
+  margin-top: 2rem;
+}
+
+.chat h2 {
+  text-align: center;
+  color: var(--amarillo);
+}
+
+.chatbox {
+  background-color: var(--bordo-oscuro);
+  padding: 1rem;
+  height: 300px;
+  overflow-y: auto;
+  border: 1px solid var(--tomate);
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+.mensaje {
+  margin: 0.5rem 0;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+.usuario {
+  background-color: var(--tomate);
+  color: var(--texto-claro);
+  align-self: flex-end;
+}
+
+.asistente {
+  background-color: var(--amarillo);
+  color: black;
+  align-self: flex-start;
+}
+
+.input-area {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.input-area input {
+  flex: 1;
+  padding: 0.7rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.input-area button {
+  padding: 0.7rem 1.2rem;
+  background-color: var(--tomate);
+  border: none;
+  border-radius: 4px;
+  color: var(--texto-claro);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.input-area button:hover {
+  background-color: #a90e23;
+}
