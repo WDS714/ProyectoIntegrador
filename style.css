@@ -1,139 +1,160 @@
-/* Paleta */
+
 :root {
-  --bordo-oscuro: #4A102A;
-  --vino: #85193C;
-  --tomate: #C5172E;
+  --vino-oscuro: #4A102A;
+  --vino-medio: #85193C;
+  --rojo-tomate: #C5172E;
   --amarillo: #FCF259;
-  --texto-claro: #ffffff;
+  --blanco: #ffffff;
 }
+
 
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background-color: var(--bordo-oscuro);
-  color: var(--texto-claro);
+  background-color: var(--vino-oscuro);
+  color: var(--blanco);
 }
 
 header {
-  background-color: var(--vino);
+  background-color: var(--vino-medio);
+  color: var(--amarillo);
+  padding: 30px;
   text-align: center;
-  padding: 2rem;
 }
 
 header h1 {
   margin: 0;
-  font-size: 2.5rem;
+  font-size: 2.5em;
+}
+
+
+.info-bloque {
+  background-color: var(--vino-medio);
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  margin: 40px auto;
+  padding: 30px;
+  width: 85%;
+  max-width: 900px;
+  transition: transform 0.3s;
+}
+
+.info-bloque:hover {
+  transform: scale(1.01);
+}
+
+.info-bloque h2 {
   color: var(--amarillo);
+  font-size: 1.8em;
+  margin-bottom: 10px;
 }
 
-.info-section {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  padding: 2rem;
+.info-bloque p {
+  font-size: 1.1em;
+  line-height: 1.7;
 }
 
-.card {
-  background-color: var(--vino);
-  border-left: 10px solid var(--tomate);
-  padding: 1.5rem;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-}
-
-.card h2 {
-  margin-top: 0;
-  color: var(--amarillo);
-}
 
 .graficos {
-  padding: 2rem;
-  background-color: var(--vino);
-  margin-top: 2rem;
+  background-color: var(--rojo-tomate);
+  padding: 40px 20px;
+  text-align: center;
 }
 
 .graficos h2 {
-  text-align: center;
-  color: var(--amarillo);
-  margin-bottom: 1rem;
+  color: var(--blanco);
+  font-size: 1.8em;
+  margin-bottom: 20px;
 }
 
 .iframe-container {
-  display: flex;
-  justify-content: center;
+  width: 100%;
+  max-width: 1000px;
+  height: 550px;
+  margin: 0 auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 iframe {
-  width: 90%;
-  height: 500px;
+  width: 100%;
+  height: 100%;
   border: none;
-  border-radius: 8px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 }
 
+
 .chat {
-  padding: 2rem;
-  background-color: var(--vino);
-  margin-top: 2rem;
+  background-color: var(--vino-medio);
+  margin: 50px auto;
+  width: 85%;
+  max-width: 900px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 30px;
 }
 
 .chat h2 {
-  text-align: center;
   color: var(--amarillo);
+  font-size: 1.6em;
+  margin-bottom: 20px;
 }
 
 .chatbox {
-  background-color: var(--bordo-oscuro);
-  padding: 1rem;
-  height: 300px;
+  border: 1px solid var(--amarillo);
+  padding: 15px;
+  height: 250px;
   overflow-y: auto;
-  border: 1px solid var(--tomate);
-  border-radius: 6px;
-  margin-bottom: 1rem;
+  background-color: var(--vino-oscuro);
+  color: var(--blanco);
+  margin-bottom: 15px;
+  border-radius: 10px;
 }
 
+.input-area {
+  display: flex;
+  gap: 10px;
+}
+
+.input-area input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid var(--amarillo);
+  background-color: var(--blanco);
+  color: var(--vino-oscuro);
+  font-size: 1em;
+}
+
+.input-area button {
+  padding: 10px 20px;
+  background-color: var(--amarillo);
+  color: var(--vino-oscuro);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.input-area button:hover {
+  background-color: #e5e150;
+}
+
+
 .mensaje {
-  margin: 0.5rem 0;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 80%;
 }
 
 .usuario {
-  background-color: var(--tomate);
-  color: var(--texto-claro);
+  background-color: var(--rojo-tomate);
   align-self: flex-end;
 }
 
 .asistente {
   background-color: var(--amarillo);
-  color: black;
+  color: var(--vino-oscuro);
   align-self: flex-start;
-}
-
-.input-area {
-  display: flex;
-  gap: 0.5rem;
-}
-
-.input-area input {
-  flex: 1;
-  padding: 0.7rem;
-  border: none;
-  border-radius: 4px;
-  font-size: 1rem;
-}
-
-.input-area button {
-  padding: 0.7rem 1.2rem;
-  background-color: var(--tomate);
-  border: none;
-  border-radius: 4px;
-  color: var(--texto-claro);
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-.input-area button:hover {
-  background-color: #a90e23;
 }
